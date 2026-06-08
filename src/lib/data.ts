@@ -336,10 +336,10 @@ export const TIMELINE_ENTRIES: TimelineEntry[] = [
 
 // ─── Social Links ──────────────────────────────────────
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: "GitHub", url: "https://github.com/yourusername", icon: "github" },
-  { platform: "LinkedIn", url: "https://linkedin.com/in/yourusername", icon: "linkedin" },
-  { platform: "Email", url: "mailto:your.email@example.com", icon: "mail" },
-  { platform: "Instagram", url: "https://instagram.com/yourusername", icon: "instagram" },
+  { platform: "GitHub", url: "https://github.com/Ahm-dev-sketch", icon: "github" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahmad-dhani-8ab26b300", icon: "linkedin" },
+  { platform: "Email", url: "mailto:ahmaddhani7901@ghmail.com", icon: "mail" },
+  { platform: "Instagram", url: "https://www.instagram.com/amddhani_?igsh=N2h1eDc2dW04azd1", icon: "instagram" },
 ];
 
 // ─── Contact Form ──────────────────────────────────────
