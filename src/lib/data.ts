@@ -54,11 +54,11 @@ export const ABOUT_PARAGRAPHS = [
 ];
 
 export const QUICK_FACTS: QuickFact[] = [
-  { icon: "🎓", text: "S1 Sistem Informasi (Jurusan Ilmu Komputer), Universitas Riau, 2026" },
-  { icon: "📍", text: "Pekanbaru, Riau, Indonesia" },
-  { icon: "🏆", text: "Graduated with Honors (Pujian), Skripsi Grade A" },
-  { icon: "💼", text: "Open to: Full-time / Freelance / Research Collaboration" },
-  { icon: "🌐", text: "Languages: Indonesian (Native), English (Professional)" },
+  { icon: "graduation-cap", text: "S1 Sistem Informasi (Jurusan Ilmu Komputer), Universitas Riau, 2026" },
+  { icon: "map-pin", text: "Pekanbaru, Riau, Indonesia" },
+  { icon: "trophy", text: "Graduated with Honors (Pujian), Skripsi Grade A" },
+  { icon: "briefcase", text: "Open to: Full-time / Freelance / Research Collaboration" },
+  { icon: "globe", text: "Languages: Indonesian (Native), English (Professional)" },
 ];
 
 export const EXPLORING_BADGES = [

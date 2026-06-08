@@ -2,8 +2,16 @@
 
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
-import { Download, Sparkles } from "lucide-react";
+import { Download, Sparkles, GraduationCap, MapPin, Trophy, Briefcase, Globe, LucideIcon } from "lucide-react";
 import { ABOUT_PARAGRAPHS, QUICK_FACTS, EXPLORING_BADGES } from "@/lib/data";
+
+const QUICK_FACT_ICONS: Record<string, LucideIcon> = {
+  "graduation-cap": GraduationCap,
+  "map-pin": MapPin,
+  "trophy": Trophy,
+  "briefcase": Briefcase,
+  "globe": Globe,
+};
 
 export default function About() {
   const ref = useRef(null);
@@ -79,14 +87,19 @@ export default function About() {
                 Quick Facts
               </h3>
               <div className="space-y-4">
-                {QUICK_FACTS.map((fact, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <span className="text-lg flex-shrink-0 mt-0.5">{fact.icon}</span>
-                    <span className="text-text-muted text-sm leading-relaxed">
-                      {fact.text}
-                    </span>
-                  </div>
-                ))}
+                {QUICK_FACTS.map((fact, i) => {
+                  const IconComponent = QUICK_FACT_ICONS[fact.icon];
+                  return (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 mt-0.5 text-accent">
+                        {IconComponent ? <IconComponent size={18} /> : null}
+                      </span>
+                      <span className="text-text-muted text-sm leading-relaxed">
+                        {fact.text}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
