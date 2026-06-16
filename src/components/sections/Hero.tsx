@@ -11,8 +11,9 @@ import {
 } from "@/lib/data";
 
 function AnimatedCounter({ value }: { value: string }) {
-  const numericPart = value.replace(/[^0-9]/g, "");
-  const suffix = value.replace(/[0-9]/g, "");
+  const isDecimalOrFraction = value.includes(".") || value.includes("/");
+  const numericPart = isDecimalOrFraction ? "" : value.replace(/[^0-9]/g, "");
+  const suffix = isDecimalOrFraction ? value : value.replace(/[0-9]/g, "");
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const prefersReducedMotion = useReducedMotion();

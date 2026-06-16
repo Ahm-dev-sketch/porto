@@ -9,7 +9,6 @@ import {
   Building2,
   FlaskConical,
   BookOpen,
-  Award,
   Users,
   Database,
   BrainCircuit,
@@ -26,7 +25,7 @@ const TIMELINE_ICONS: Record<string, React.ReactNode> = {
   "Built Information Retrieval Search System": <Code2 size={18} />,
   "Oracle & Data Science Training — Star Core": <Database size={18} />,
   "Skripsi: Plagiarism Detection using VSM": <BookOpen size={18} />,
-  "🎓 Graduated with Honors (Predikat Pujian)": <Award size={18} />,
+  "Graduated (GPA 3.74/4.0)": <GraduationCap size={18} />,
 };
 
 export default function Timeline() {
@@ -103,6 +102,9 @@ export default function Timeline() {
                         {entry.year}
                       </span>
                       <h3 className="font-syne font-bold text-base md:text-lg text-text-primary mt-1.5 mb-2">
+                        {entry.title === "Graduated (GPA 3.74/4.0)" && (
+                          <GraduationCap className="inline-block mr-2 text-accent align-text-bottom" size={20} />
+                        )}
                         {entry.title}
                       </h3>
                       <p className="text-text-muted text-sm leading-relaxed">

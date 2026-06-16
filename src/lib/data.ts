@@ -43,7 +43,7 @@ export const HERO_STATS: Stat[] = [
   { value: "3+", label: "Research Projects" },
   { value: "10+", label: "Projects Built" },
   { value: "Data &", label: "Web Specialist" },
-  { value: "2026", label: "Graduated with Honors" },
+  { value: "3.74/4.0", label: "Total GPA" },
 ];
 
 // ─── About ─────────────────────────────────────────────
@@ -56,7 +56,7 @@ export const ABOUT_PARAGRAPHS = [
 export const QUICK_FACTS: QuickFact[] = [
   { icon: "graduation-cap", text: "S1 Sistem Informasi (Jurusan Ilmu Komputer), Universitas Riau, 2026" },
   { icon: "map-pin", text: "Pekanbaru, Riau, Indonesia" },
-  { icon: "trophy", text: "Graduated with Honors (Pujian), Skripsi Grade A" },
+  { icon: "trophy", text: "Total GPA 3.74/4.0" },
   { icon: "briefcase", text: "Open to: Full-time / Freelance / Research Collaboration" },
   { icon: "globe", text: "Languages: Indonesian (Native), English (Professional)" },
 ];
@@ -182,12 +182,12 @@ export const PROJECTS: Project[] = [
     category: "Research",
     tags: ["Information Retrieval", "Research"],
     description:
-      "Implemented Vector Space Model and Cosine Similarity to detect plagiarism in student thesis abstracts at Jurusan Ilmu Komputer Universitas Riau. Completed with grade A.",
+      "Implemented Vector Space Model and Cosine Similarity to detect plagiarism in student thesis abstracts at Jurusan Ilmu Komputer Universitas Riau.",
     tech: ["Vector Space Model", "Cosine Similarity", "TF-IDF", "PHP", "Laravel"],
     links: [
       { label: "GitHub", url: "https://github.com/Ahm-dev-sketch/plagiarism-system.git" },
     ],
-    badge: "Skripsi — Grade A",
+    badge: "Skripsi",
     featured: true,
   },
   {
@@ -324,11 +324,11 @@ export const TIMELINE_ENTRIES: TimelineEntry[] = [
   {
     year: "2026",
     title: "Skripsi: Plagiarism Detection using VSM",
-    description: "Implemented Vector Space Model & Cosine Similarity for thesis abstract plagiarism detection — Grade A",
+    description: "Implemented Vector Space Model & Cosine Similarity for thesis abstract plagiarism detection",
   },
   {
     year: "2026",
-    title: "🎓 Graduated with Honors (Predikat Pujian)",
+    title: "Graduated (GPA 3.74/4.0)",
     description: "S1 Sistem Informasi, Universitas Riau",
     icon: "graduation",
   },
@@ -338,7 +338,7 @@ export const TIMELINE_ENTRIES: TimelineEntry[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com/Ahm-dev-sketch", icon: "github" },
   { platform: "LinkedIn", url: "https://www.linkedin.com/in/ahmad-dhani-8ab26b300", icon: "linkedin" },
-  { platform: "Email", url: "mailto:ahmaddhani7901@ghmail.com", icon: "mail" },
+  { platform: "Email", url: "mailto:ahmaddhani7901@gmail.com", icon: "mail" },
   { platform: "Instagram", url: "https://www.instagram.com/amddhani_?igsh=N2h1eDc2dW04azd1", icon: "instagram" },
 ];
 
